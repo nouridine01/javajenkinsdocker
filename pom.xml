@@ -10,9 +10,14 @@
 
 
     <properties>
-        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.source>1.9</maven.compiler.source> <!-- java 9 car c'est ce qui est installer sur jenkins -->
         <maven.compiler.target>1.9</maven.compiler.target>
     </properties>
+
+    <build>
+        <finalName>java-jenkins-docker</finalName>
+    </build>
+
 
     <dependencies>
         <!-- junit 5, unit test -->
